@@ -1,4 +1,4 @@
-# DNN-surgery
+# DNN Surgery
 This project is for COMP5707 & COMP5708 Capstone Project in Unversity of Sydney
 
 ## Author
