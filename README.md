@@ -44,7 +44,7 @@ Different with regular inference, the processing of inference need to be divided
    * SAMSUNG microSD 16GB
 
 
-*Backend: Mac Pro
+* Backend: Mac Pro
 
    * Processor 2.9 GHz Intel Core i5
    * Memory 8 GB
