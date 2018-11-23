@@ -2,32 +2,27 @@
 This project is for COMP5707 & COMP5708 Capstone Project in Unversity of Sydney
 
 
-## Getting Started
+## Software and Hardware Specification
 
 
+Frontend: raspberry pi 3
 
-### Prerequisites
+Model B \& 16GB NOOBS
+SAMSUNG microSD 16GB
 
 
-\subsection{Software and Hardware Specification}
-\begin{enumerate}
-\item Frontend: raspberry pi 3
-\begin{itemize}
-\item Model B \& 16GB NOOBS
-\item SAMSUNG microSD 16GB
-\end{itemize}
+Backend: Mac Pro
 
-\item Backend: Mac Pro
-\begin{itemize}
-\item Processor 2.9 GHz Intel Core i5
-\item Memory 8 GB
-\end{itemize}
-\item Python version: python 3.6.6
-\item IDE: pycharm
-\item Tensorflow: 1.11.0
-\item Keras: 2.2.2
+Processor 2.9 GHz Intel Core i5
+Memory 8 GB
 
-\end{enumerate}
+
+Python version: python 3.6.6
+
+Tensorflow: 1.11.0
+Keras: 2.2.2
+
+
 
 
 ```
