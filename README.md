@@ -1,7 +1,25 @@
 # DNN-surgery
 This project is for COMP5707 & COMP5708 Capstone Project in Unversity of Sydney
 
+## Author
+Yu Yang 
 
+## Intruduction of Surgery
+
+### Architecture
+
+Different with regular inference, the processing of inference need to be divided in two parts in DNN surgery. The wound is taken as the cut-off point, the frontend only operate from input to appointed intermediate layer(s) and send allocation instruction to backend and features of intermediate layer(s). The backend receives the instruction and features and executes from appointed intermediate layer(s) to the end of inference, then send the final output(classification) of DNN back to frontend. Both frontend and backend have the entire structure and weight of DNN.
+
+
+### Support Module
+
+* Graph model: plot model with index of layer in model
+* Incision support module:
+    * wound generation: generate candidate wound based on the architecture of model(include ring detector)
+    * wound to incision: incision is more specific position than wound, it points out whether the surgery is before or after appointed intermediate layer(s)
+    * feasible wound generation:candidate operation plan
+
+ 
 ## Software and Hardware Specification
 
 
@@ -23,9 +41,30 @@ Tensorflow: 1.11.0
 Keras: 2.2.2
 
 
-## Author
-Yu Yang 
+
+## Surgery code
+[Find the optimal wounds](https://github.com/yangyuchelsea/DNN-surgery/blob/master/surgery_experiment/code/surgery_for_resnet50.py)
+
+## Conclustion
+
+From the experiments, we could get three major conclusion. First, DNN Surery is practicable of model with residual module and inception module in 4G network. Second, the optimal wound is after the $6^(th)$ layer/before $7^(th)$ layer, it could accelerate 65\% than the normal inference time when the first time to implement the surgery and accelerate 77\% after the first time. The size of intermediate transfer file is 803320 bytes, it needs 3ms to save the file and if the current network speed is faster than 7.453 Mbps, the surgery is effective and efficient. And the last, there are 33 desirable wounds, the surgery is effective as well in the wounds if the uplink and downlink network speed are both higher than 48 Mbps. The desirable wounds are the list:
+
+  1  | 11, 14 | 40, 46 | 44, 48|
+  2   | 12, 14 | 40, 47 |   49  |
+  3   | 12, 16 | 41, 46 |   50  |
+  4   |   17   | 41, 48 |   59  |
+  5   |   18   | 42, 46 |   60  | 
+  6   |   27   | 42, 48 |   70  |
+7, 14 |   28   | 43, 46 |       |
+8, 14 | 39, 46  | 43, 48 |       |
+11, 14| 39, 48 | 44, 46 |       |
+            
+   
+
 
 ## Visualization of result
 [Visualization](https://github.com/yangyuchelsea/DNN-surgery/blob/master/surgery_experiment/result/surgery/visual.ipynb)<br/>
 [Presentation Slides](https://github.com/yangyuchelsea/DNN-surgery/blob/master/Presentation.pdf)
+
+
+
