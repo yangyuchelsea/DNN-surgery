@@ -58,7 +58,7 @@ Different with regular inference, the processing of inference need to be divided
 
 
 ## Surgery code
-[basic experiment](https://github.com/yangyuchelsea/DNN-surgery/blob/master/surgery_experiment/code/setup_exp.py)<br/>
+[Basic experiment](https://github.com/yangyuchelsea/DNN-surgery/blob/master/surgery_experiment/code/setup_exp.py)<br/>
 [Find the optimal wounds](https://github.com/yangyuchelsea/DNN-surgery/blob/master/surgery_experiment/code/surgery_for_resnet50.py)
 
 ## Conclustion
