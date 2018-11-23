@@ -6,6 +6,14 @@ Yu Yang
 
 ## Intruduction of Surgery
 
+### Analogy with Organ Donation Surgery
+
+DNN Surgery executes part of inference at the edge and the rest is processed at the strong backend.
+The motivation is to accelerate the inference speed with the device which has no strong computation power. The surgery could be analogy with blood donation, there are five major parts in surgery: the frontend could be viewed as transplant who is people who have received blood donations, the backend could be seen as donar who helps the transplant, the intermediary of transfer in blood donation is an intravenous line which is like wireless Internet in DNN surgery. Wound is the position of cut layer, in blood donation, it is the position of blodd vessel. And incision could be compared as syrings. All details will be elaborated in the following part. 
+
+
+![alt text](https://github.com/yangyuchelsea/DNN-surgery/blob/master/surgery_experiment/result/surgery/analog.png)
+
 ### Architecture
 
 Different with regular inference, the processing of inference need to be divided in two parts in DNN surgery. The wound is taken as the cut-off point, the frontend only operate from input to appointed intermediate layer(s) and send allocation instruction to backend and features of intermediate layer(s). The backend receives the instruction and features and executes from appointed intermediate layer(s) to the end of inference, then send the final output(classification) of DNN back to frontend. Both frontend and backend have the entire structure and weight of DNN.
