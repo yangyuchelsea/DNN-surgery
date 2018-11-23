@@ -63,7 +63,7 @@ Different with regular inference, the processing of inference need to be divided
 
 ## Conclustion
 
-From the experiments, we could get three major conclusion. First, DNN Surery is practicable of model with residual module and inception module in 4G network. Second, the optimal wound is after the $6^(th)$ layer/before $7^(th)$ layer, it could accelerate 65\% than the normal inference time when the first time to implement the surgery and accelerate 77\% after the first time. The size of intermediate transfer file is 803320 bytes, it needs 3ms to save the file and if the current network speed is faster than 7.453 Mbps, the surgery is effective and efficient. And the last, there are 33 desirable wounds, the surgery is effective as well in the wounds if the uplink and downlink network speed are both higher than 48 Mbps. The desirable wounds are the list:
+From the experiments, we could get three major conclusion. First, DNN Surery is practicable of model with residual module and inception module in 4G network. Second, the optimal wound is after the sixth layer/before seventh layer, it could accelerate 65\% than the normal inference time when the first time to implement the surgery and accelerate 77\% after the first time. The size of intermediate transfer file is 803320 bytes, it needs 3ms to save the file and if the current network speed is faster than 7.453 Mbps, the surgery is effective and efficient. And the last, there are 33 desirable wounds, the surgery is effective as well in the wounds if the uplink and downlink network speed are both higher than 48 Mbps. The desirable wounds are the list:
 
 |   1  |11, 14|40, 46|44, 48|
 |:----:|:----:|:----:|:----:| 
