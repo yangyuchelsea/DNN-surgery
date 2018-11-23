@@ -27,5 +27,5 @@ Keras: 2.2.2
 Yu Yang 
 
 ## Visualization of result
-[Visualization](https://github.com/yangyuchelsea/DNN-surgery/blob/master/surgery_experiment/result/surgery/visual.ipynb)\\
+[Visualization](https://github.com/yangyuchelsea/DNN-surgery/blob/master/surgery_experiment/result/surgery/visual.ipynb)<br/>
 [Presentation Slides](https://github.com/yangyuchelsea/DNN-surgery/blob/master/Presentation.pdf)
