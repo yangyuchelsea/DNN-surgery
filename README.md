@@ -23,8 +23,10 @@ Tensorflow: 1.11.0
 Keras: 2.2.2
 
 
+##Author
+Yu Yang 
 
-
-```
+##Visualization of result
+[a relative link](visual.ipynb)
 
 
