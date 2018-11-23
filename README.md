@@ -28,5 +28,4 @@ Yu Yang
 
 ## Visualization of result
 [Visualization](https://github.com/yangyuchelsea/DNN-surgery/blob/master/surgery_experiment/result/surgery/visual.ipynb)
-
-
+[Presentation Slides](https://github.com/yangyuchelsea/DNN-surgery/blob/master/Presentation.pdf)
